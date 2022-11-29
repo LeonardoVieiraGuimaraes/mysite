@@ -16,8 +16,9 @@ jobs:
       with:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_user }}
-        password: ${{ secrets.ftp_password }}
-        server-dir: /usr/share/nginx/html/
+        # password: ${{ secrets.ftp_password }}
+        server-dir: '/usr/share/nginx/html/'
+        ssh_private_key: ${{ secrets.private_key }}
         
         
        
