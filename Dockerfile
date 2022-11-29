@@ -1,7 +1,3 @@
-FROM nginx:alpine
-
-WORKDIR /app
-
-COPY . .
-
-COPY ./nginx.conf /etc/nginx/nginx.conf
+FROM nginx
+COPY . /usr/share/nginx/html
+# COPY nginx.conf /etc/nginx/nginx.conf
