@@ -17,8 +17,10 @@ jobs:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
+        remote_path: '/'
+        
         ssh_private_key: ${{ secrets.private_key }}
-       
+        port: 22
         
         
        
