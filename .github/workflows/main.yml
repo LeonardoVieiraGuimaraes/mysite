@@ -17,8 +17,8 @@ jobs:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-        server-dir: '/usr/share/nginx/html/'
-        ssh-private-key: ${{ secrets.private_key }}
+        remote_path: '/usr/share/nginx/html/'
+        ssh_private_key: ${{ secrets.private_key }}
         port: 22
         
         
